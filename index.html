@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation-float.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img class="logo" src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/334476255_5897442670354136_4461094960357072004_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGp2u-HgmyXl7ttKwVGGnewXDlYRG4VSFFcOVhEbhVIUTn3tYBoQF6hI9bxGMLwEbc4O-yrnYTRcAO1xNoH9NfT&_nc_ohc=E0JqtqU0osEAX8GzpiL&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfAbEcDlxOIJzl6cV3qsDH36kw6WkPK38Ew3XuyUdtv2TQ&oe=64E6AB63" alt="">
+        <h1 class="name">Chanawat Innor</h1>
+        <span class="slogan">Full Stack Web Developer</span>
+        <div class="social-img">
+            <ul>
+                <li><a href="#" target="_blank"><i class="fa tw fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa tw fa-linkedin"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa github fa-github"></i></a></li>
+            </ul>
+        </div>
+        <p class="bio">
+            
+        </p>
+        <h5>Portfolio</h5>
+        <hr>
+        <!DOCTYPE HTML>
+        <html>
+        <head>  
+        <script>
+        window.onload = function () {
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title:{
+                text: "Email Categories",
+                horizontalAlign: "left"
+            },
+            data: [{
+                type: "doughnut",
+                startAngle: 60,
+                //innerRadius: 60,
+                indexLabelFontSize: 17,
+                indexLabel: "{label} - #percent%",
+                toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                dataPoints: [
+                    { y: 90, label: "Sports" },
+                    { y: 20, label: "Academic" },
+                    { y: 10, label: "Leadership" },
+                    { y: 10, label: "Creativity"},
+                    { y: 25, label: "Confidence"},
+                    { y: 25, label: "Communication"}
+                ]
+            }]
+        });
+        chart.render();
+        
+        }
+        </script>
+        </head>
+        <body>
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+        </body>
+        </html>
